@@ -12,7 +12,7 @@ struct Sol: Decodable {
 	var AT: AtmosphericTemperature?
 	var First_UTC: String?
 	var Last_UCT: String?
-	var PRE: AtmosphericPressure
+	var PRE: AtmosphericPressure?
 	var Season: String?
 	
 }
