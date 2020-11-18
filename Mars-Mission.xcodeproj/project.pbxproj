@@ -16,6 +16,7 @@
 		3AF4629C2563199E003226E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4629A2563199E003226E3 /* LaunchScreen.storyboard */; };
 		3AF462A72563199E003226E3 /* Mars_MissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF462A62563199E003226E3 /* Mars_MissionTests.swift */; };
 		3AF462B22563199E003226E3 /* Mars_MissionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF462B12563199E003226E3 /* Mars_MissionUITests.swift */; };
+		3AF462C4256332F0003226E3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF462C3256332F0003226E3 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3AF462AD2563199E003226E3 /* Mars-MissionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mars-MissionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF462B12563199E003226E3 /* Mars_MissionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars_MissionUITests.swift; sourceTree = "<group>"; };
 		3AF462B32563199E003226E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF462C3256332F0003226E3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		3AF4628B2563199D003226E3 /* Mars-Mission */ = {
 			isa = PBXGroup;
 			children = (
+				3AF462C2256332D0003226E3 /* Models */,
 				3AF4628C2563199D003226E3 /* AppDelegate.swift */,
 				3AF4628E2563199D003226E3 /* SceneDelegate.swift */,
 				3AF462902563199D003226E3 /* ViewController.swift */,
@@ -129,6 +132,14 @@
 				3AF462B32563199E003226E3 /* Info.plist */,
 			);
 			path = "Mars-MissionUITests";
+			sourceTree = "<group>";
+		};
+		3AF462C2256332D0003226E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AF462C3256332F0003226E3 /* Weather.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				3AF462972563199D003226E3 /* Mars_Mission.xcdatamodeld in Sources */,
 				3AF4628D2563199D003226E3 /* AppDelegate.swift in Sources */,
 				3AF4628F2563199D003226E3 /* SceneDelegate.swift in Sources */,
+				3AF462C4256332F0003226E3 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
