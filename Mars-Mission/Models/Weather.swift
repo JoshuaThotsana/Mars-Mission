@@ -7,32 +7,44 @@
 
 import Foundation
 
-struct Sol: Decodable {
-	
-	var AT: AtmosphericTemperature?
-	var First_UTC: String?
-	var Last_UCT: String?
-	var PRE: AtmosphericPressure?
-	var Season: String?
-	
+struct SolKeys: Codable {
+	let solKeys: [String]
+
+	enum CodingKeys: String, CodingKey {
+		case solKeys = "sol_keys"
+	}
 }
 
-struct AtmosphericTemperature: Decodable {
-	
-	var av: Double?
-	var ct: Int?
-	var mn: Double?
-	var mx: Double?
-	
+struct SolNumber: Codable {
+	let solNumber: Sol
+	enum CodingKeys: String, CodingKey {
+		case solNumber
+		var rawValue: String {
+			get {
+				"698"
+			}
+		}
+	}
 }
 
-struct AtmosphericPressure: Decodable {
-	
-	var av: Double?
-	var ct: Int?
-	var mn: Double?
-	var mx: Double?
-	
+struct Sol: Codable {
+	let at: At
+	let firstUTC: String
+	let hws: At
+	let lastUTC: String
+	let pre: At
+
+	enum CodingKeys: String, CodingKey {
+		case at = "AT"
+		case firstUTC = "First_UTC"
+		case hws = "HWS"
+		case lastUTC = "Last_UTC"
+		case pre = "PRE"
+	}
 }
 
-
+struct At: Codable {
+	let av: Double
+	let ct: Int
+	let mn, mx: Double
+}
