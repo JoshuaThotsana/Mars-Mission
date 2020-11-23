@@ -42,7 +42,7 @@ class WeatherViewModel {
 	
 	private func handleFetchForecastFails(_ error: Error) {
 		DispatchQueue.main.async {
-			print(error)
+			self.view.showServerError()
 		}
 	}
 }

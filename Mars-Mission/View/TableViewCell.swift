@@ -23,7 +23,7 @@ class TableViewCell: UITableViewCell {
     }
 	
 	func commonInit(date: String) {
-		dateLabel.text = date
+		dateLabel.text = convertUTCDateToLocalDate(date: date)
 	}
     
 }

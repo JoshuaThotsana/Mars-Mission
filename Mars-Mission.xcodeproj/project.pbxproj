@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A05D32D256BE414002068CB /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D32B256BE414002068CB /* WeatherDetailsViewController.swift */; };
 		3A05D32E256BE414002068CB /* WeatherDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D32C256BE414002068CB /* WeatherDetailsViewController.xib */; };
+		3A05D334256C0407002068CB /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D333256C0407002068CB /* DateFormatter.swift */; };
 		3A9069F6256BC2F6008303CF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069F5256BC2F6008303CF /* Service.swift */; };
 		3A9069FE256BC552008303CF /* ServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069FD256BC552008303CF /* ServiceImplementation.swift */; };
 		3AAE68CA256BCB0A002D0E49 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68C8256BCB0A002D0E49 /* WeatherViewController.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		3A05D32B256BE414002068CB /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		3A05D32C256BE414002068CB /* WeatherDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDetailsViewController.xib; sourceTree = "<group>"; };
+		3A05D333256C0407002068CB /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		3A9069F5256BC2F6008303CF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3A9069FD256BC552008303CF /* ServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImplementation.swift; sourceTree = "<group>"; };
 		3AAE68C8256BCB0A002D0E49 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 				3A05D32C256BE414002068CB /* WeatherDetailsViewController.xib */,
 			);
 			name = WeatherDetails;
+			sourceTree = "<group>";
+		};
+		3A05D332256C03DF002068CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3A05D333256C0407002068CB /* DateFormatter.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		3A9069F4256BC2E2008303CF /* Service */ = {
@@ -179,6 +189,7 @@
 		3AF4628B2563199D003226E3 /* Mars-Mission */ = {
 			isa = PBXGroup;
 			children = (
+				3A05D332256C03DF002068CB /* Utilities */,
 				3AAE68D9256BCC5B002D0E49 /* ViewModel */,
 				3AAE68D8256BCC4E002D0E49 /* Repository */,
 				3AAE68C7256BCAE9002D0E49 /* View */,
@@ -362,6 +373,7 @@
 				3AAE68E8256BD012002D0E49 /* WeatherViewModel.swift in Sources */,
 				3AAE68CA256BCB0A002D0E49 /* WeatherViewController.swift in Sources */,
 				3AF462C4256332F0003226E3 /* Weather.swift in Sources */,
+				3A05D334256C0407002068CB /* DateFormatter.swift in Sources */,
 				3AAE6904256BDC79002D0E49 /* TableViewCell.swift in Sources */,
 				3A9069F6256BC2F6008303CF /* Service.swift in Sources */,
 				3AAE68E3256BCEA8002D0E49 /* RepositoryImplementation.swift in Sources */,

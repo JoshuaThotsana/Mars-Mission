@@ -10,4 +10,5 @@ import Foundation
 protocol WeatherView {
 	func showLoadingIndicator()
 	func hideLoadingIndicator()
+	func showServerError() 
 }
