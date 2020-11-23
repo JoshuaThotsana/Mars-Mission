@@ -71,11 +71,12 @@ extension WeatherViewController {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let vc = WeatherDetailsViewController()
 		vc.commonInit(date: "date: \(viewModel.forecastDetails?[indexPath.row].date ?? "")",
-					  temp: "temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0)",
-					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0)",
-					  windSpeed: "humidity: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0)",
+					  temp: "temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0) ℃",
+					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0) ％",
+					  windSpeed: "humidity: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0) km/h",
 					  safe: "safe: \(viewModel.forecastDetails?[indexPath.row].safe ?? false)")
 		self.navigationController?.pushViewController(vc, animated: true)
+		self.tableView.deselectRow(at: indexPath, animated: true)
 	}
 	
 }

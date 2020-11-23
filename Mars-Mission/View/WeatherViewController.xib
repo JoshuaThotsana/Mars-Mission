@@ -32,7 +32,7 @@
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zOq-pK-jJQ" secondAttribute="bottom" id="0Xa-ps-VX0"/>
                 <constraint firstItem="zOq-pK-jJQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7P0-HW-jnW"/>
