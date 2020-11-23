@@ -9,11 +9,12 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 	
+	
+	@IBOutlet weak var cellView: UIView!
 	@IBOutlet weak var dateLabel: UILabel!
 	
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
