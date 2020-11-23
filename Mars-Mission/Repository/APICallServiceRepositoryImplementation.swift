@@ -7,9 +7,9 @@
 
 import Foundation
 
-class RepositoryImplementation: Repository {
+class APICallServiceRepositoryImplementation: APICallServiceRepository {
 	
-	private let service = ServiceImplementation()
+	private let service = APICallServiceLayerImplementation()
 	
 	func getForecast(completion: @escaping (Result<[ForecastDetails], ForecastError>) -> Void) {
 		service.getForecast { (result) in

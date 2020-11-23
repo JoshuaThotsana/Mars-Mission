@@ -1,5 +1,5 @@
 //
-//  ServiceImplementation.swift
+//  APICallServiceLayerImplementation.swift
 //  Mars-Mission
 //
 //  Created by Thotsana Mabotsa on 2020/11/23.
@@ -12,7 +12,7 @@ enum ForecastError: Error {
 	case canNotProcessData
 }
 
-struct ServiceImplementation: Service {
+struct APICallServiceLayerImplementation: APICallServiceLayer {
 	
 	let resourceURL: URL
 	

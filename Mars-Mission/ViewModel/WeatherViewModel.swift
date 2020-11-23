@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherViewModel {
 	
-	let repository = RepositoryImplementation()
+	let repository = APICallServiceRepositoryImplementation()
 	
 	var view: WeatherViewController
 	var forecastDetails: [ForecastDetails]?

@@ -10,12 +10,12 @@
 		3A05D32D256BE414002068CB /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D32B256BE414002068CB /* WeatherDetailsViewController.swift */; };
 		3A05D32E256BE414002068CB /* WeatherDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D32C256BE414002068CB /* WeatherDetailsViewController.xib */; };
 		3A05D334256C0407002068CB /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D333256C0407002068CB /* DateFormatter.swift */; };
-		3A9069F6256BC2F6008303CF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069F5256BC2F6008303CF /* Service.swift */; };
-		3A9069FE256BC552008303CF /* ServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069FD256BC552008303CF /* ServiceImplementation.swift */; };
+		3A9069F6256BC2F6008303CF /* APICallServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069F5256BC2F6008303CF /* APICallServiceLayer.swift */; };
+		3A9069FE256BC552008303CF /* APICallServiceLayerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9069FD256BC552008303CF /* APICallServiceLayerImplementation.swift */; };
 		3AAE68CA256BCB0A002D0E49 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68C8256BCB0A002D0E49 /* WeatherViewController.swift */; };
 		3AAE68CB256BCB0A002D0E49 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE68C9256BCB0A002D0E49 /* WeatherViewController.xib */; };
-		3AAE68DB256BCE00002D0E49 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68DA256BCE00002D0E49 /* Repository.swift */; };
-		3AAE68E3256BCEA8002D0E49 /* RepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68E2256BCEA8002D0E49 /* RepositoryImplementation.swift */; };
+		3AAE68DB256BCE00002D0E49 /* APICallServiceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68DA256BCE00002D0E49 /* APICallServiceRepository.swift */; };
+		3AAE68E3256BCEA8002D0E49 /* APICallServiceRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68E2256BCEA8002D0E49 /* APICallServiceRepositoryImplementation.swift */; };
 		3AAE68E8256BD012002D0E49 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68E7256BD012002D0E49 /* WeatherViewModel.swift */; };
 		3AAE68ED256BD1FF002D0E49 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE68EC256BD1FF002D0E49 /* WeatherView.swift */; };
 		3AAE6904256BDC79002D0E49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE6902256BDC79002D0E49 /* TableViewCell.swift */; };
@@ -51,12 +51,12 @@
 		3A05D32B256BE414002068CB /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		3A05D32C256BE414002068CB /* WeatherDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDetailsViewController.xib; sourceTree = "<group>"; };
 		3A05D333256C0407002068CB /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-		3A9069F5256BC2F6008303CF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		3A9069FD256BC552008303CF /* ServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImplementation.swift; sourceTree = "<group>"; };
+		3A9069F5256BC2F6008303CF /* APICallServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallServiceLayer.swift; sourceTree = "<group>"; };
+		3A9069FD256BC552008303CF /* APICallServiceLayerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallServiceLayerImplementation.swift; sourceTree = "<group>"; };
 		3AAE68C8256BCB0A002D0E49 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		3AAE68C9256BCB0A002D0E49 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
-		3AAE68DA256BCE00002D0E49 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		3AAE68E2256BCEA8002D0E49 /* RepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImplementation.swift; sourceTree = "<group>"; };
+		3AAE68DA256BCE00002D0E49 /* APICallServiceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallServiceRepository.swift; sourceTree = "<group>"; };
+		3AAE68E2256BCEA8002D0E49 /* APICallServiceRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallServiceRepositoryImplementation.swift; sourceTree = "<group>"; };
 		3AAE68E7256BD012002D0E49 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3AAE68EC256BD1FF002D0E49 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		3AAE6902256BDC79002D0E49 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		3A9069F4256BC2E2008303CF /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3A9069F5256BC2F6008303CF /* Service.swift */,
-				3A9069FD256BC552008303CF /* ServiceImplementation.swift */,
+				3A9069F5256BC2F6008303CF /* APICallServiceLayer.swift */,
+				3A9069FD256BC552008303CF /* APICallServiceLayerImplementation.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -143,8 +143,8 @@
 		3AAE68D8256BCC4E002D0E49 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3AAE68DA256BCE00002D0E49 /* Repository.swift */,
-				3AAE68E2256BCEA8002D0E49 /* RepositoryImplementation.swift */,
+				3AAE68DA256BCE00002D0E49 /* APICallServiceRepository.swift */,
+				3AAE68E2256BCEA8002D0E49 /* APICallServiceRepositoryImplementation.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -366,17 +366,17 @@
 				3A05D32D256BE414002068CB /* WeatherDetailsViewController.swift in Sources */,
 				3AAE68ED256BD1FF002D0E49 /* WeatherView.swift in Sources */,
 				3AF462972563199D003226E3 /* Mars_Mission.xcdatamodeld in Sources */,
-				3A9069FE256BC552008303CF /* ServiceImplementation.swift in Sources */,
+				3A9069FE256BC552008303CF /* APICallServiceLayerImplementation.swift in Sources */,
 				3AF4628D2563199D003226E3 /* AppDelegate.swift in Sources */,
-				3AAE68DB256BCE00002D0E49 /* Repository.swift in Sources */,
+				3AAE68DB256BCE00002D0E49 /* APICallServiceRepository.swift in Sources */,
 				3AF4628F2563199D003226E3 /* SceneDelegate.swift in Sources */,
 				3AAE68E8256BD012002D0E49 /* WeatherViewModel.swift in Sources */,
 				3AAE68CA256BCB0A002D0E49 /* WeatherViewController.swift in Sources */,
 				3AF462C4256332F0003226E3 /* Weather.swift in Sources */,
 				3A05D334256C0407002068CB /* DateFormatter.swift in Sources */,
 				3AAE6904256BDC79002D0E49 /* TableViewCell.swift in Sources */,
-				3A9069F6256BC2F6008303CF /* Service.swift in Sources */,
-				3AAE68E3256BCEA8002D0E49 /* RepositoryImplementation.swift in Sources */,
+				3A9069F6256BC2F6008303CF /* APICallServiceLayer.swift in Sources */,
+				3AAE68E3256BCEA8002D0E49 /* APICallServiceRepositoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
