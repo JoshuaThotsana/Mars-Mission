@@ -32,7 +32,7 @@ class WeatherDetailsViewController: UIViewController {
     }
 	
 	func commonInit(date: String, temp: String, humidity: String, windSpeed: String, safe: String) {
-		self.date = convertUTCDateToLocalDate(date: date)
+		self.date = date
 		self.temp = temp
 		self.humidity = humidity
 		self.windSpeed = windSpeed

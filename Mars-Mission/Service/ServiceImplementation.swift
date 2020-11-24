@@ -18,11 +18,9 @@ struct ServiceImplementation: Service {
 	
 	init() {
 		let resourceString = "https://run.mocky.io/v3/04dc1be1-8609-48c9-b4a0-27a363aa22a9"
-		
 		guard let resourceURL = URL(string: resourceString) else { fatalError() }
 		self.resourceURL = resourceURL
 	}
-	
 	
 	func getForecast(completion: @escaping (Result<[ForecastDetails], ForecastError>) -> Void) {
 		let dataTask = URLSession.shared.dataTask(with: resourceURL) { data, response, error in
@@ -36,13 +34,10 @@ struct ServiceImplementation: Service {
 				let responseObject = try decoder.decode(Forecasts.self, from: jsonData)
 				let forecastDetails = responseObject.forecasts
 				completion(.success(forecastDetails))
-				print(forecastDetails)
 			} catch {
 				completion(.failure(.canNotProcessData))
 			}
 		}
-		
 		dataTask.resume()
 	}
-	
 }

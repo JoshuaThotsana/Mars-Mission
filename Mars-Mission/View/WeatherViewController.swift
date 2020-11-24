@@ -16,6 +16,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		viewModel.fetchForecast()
 		
 		tableView.dataSource = self
@@ -48,34 +49,35 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
 		alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: {_ in
 			self.viewModel.fetchForecast()
 		}))
-
 	}
-	
-	
-	
 }
 
 extension WeatherViewController {
+	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		viewModel.forecastDetails?.count ?? 0
 	}
+	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
+		tableView.separatorStyle = .none
+				
 		cell.commonInit(date: "\(String(describing: viewModel.forecastDetails?[indexPath.row].date ?? ""))")
 		return cell
 	}
+	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		86
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let vc = WeatherDetailsViewController()
-		vc.commonInit(date: "date: \(viewModel.forecastDetails?[indexPath.row].date ?? "")",
+		vc.commonInit(date: "date: \(convertUTCDateToLocalDate(date: viewModel.forecastDetails?[indexPath.row].date ?? "") )",
 					  temp: "temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0)",
 					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0)",
-					  windSpeed: "humidity: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0)",
+					  windSpeed: "windSpeed: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0)",
 					  safe: "safe: \(viewModel.forecastDetails?[indexPath.row].safe ?? false)")
 		self.navigationController?.pushViewController(vc, animated: true)
+		tableView.deselectRow(at: indexPath, animated: true)
 	}
-	
 }
