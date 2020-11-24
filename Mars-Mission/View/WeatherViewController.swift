@@ -74,8 +74,8 @@ extension WeatherViewController {
 		let vc = WeatherDetailsViewController()
 		vc.commonInit(date: "date: \(convertUTCDateToLocalDate(date: viewModel.forecastDetails?[indexPath.row].date ?? "") )",
 					  temp: "temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0)",
-					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0)",
-					  windSpeed: "windSpeed: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0)",
+					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0) ％",
+					  windSpeed: "windSpeed: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0) km/h",
 					  safe: "safe: \(viewModel.forecastDetails?[indexPath.row].safe ?? false)")
 		self.navigationController?.pushViewController(vc, animated: true)
 		tableView.deselectRow(at: indexPath, animated: true)
