@@ -9,6 +9,8 @@ import UIKit
 
 class WeatherViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeatherView {
 	
+	
+	@IBOutlet weak var detailsLabel: UILabel!
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 	
@@ -23,8 +25,8 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
 		tableView.delegate = self
 		let nibName = UINib(nibName: "TableViewCell", bundle: nil)
 		tableView.register(nibName, forCellReuseIdentifier: "tableViewCell")
-		view.backgroundColor = .blue
 		navigationItem.title = "NASA Weather"
+//		self.detailsLabel.text = "Weather details over the past 6 days"
 	}
 	
 	func showLoadingIndicator() {
@@ -67,16 +69,16 @@ extension WeatherViewController {
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		86
+		100
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let vc = WeatherDetailsViewController()
-		vc.commonInit(date: "date: \(convertUTCDateToLocalDate(date: viewModel.forecastDetails?[indexPath.row].date ?? "") )",
-					  temp: "temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0) ℃",
-					  humidity: " humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0) ％",
-					  windSpeed: "windSpeed: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0) km/h",
-					  safe: "safe: \(viewModel.forecastDetails?[indexPath.row].safe ?? false)")
+		vc.commonInit(date: "Date: \(convertUTCDateToLocalDate(date: viewModel.forecastDetails?[indexPath.row].date ?? "") )",
+					  temp: "Temp: \(viewModel.forecastDetails?[indexPath.row].temp ?? 0) ℃",
+					  humidity: " Humidity: \(viewModel.forecastDetails?[indexPath.row].humidity ?? 0) ％",
+					  windSpeed: "WindSpeed: \(viewModel.forecastDetails?[indexPath.row].windSpeed ?? 0) km/h",
+					  safe: "Safe: \(viewModel.forecastDetails?[indexPath.row].safe ?? false)")
 		self.navigationController?.pushViewController(vc, animated: true)
 		tableView.deselectRow(at: indexPath, animated: true)
 	}
