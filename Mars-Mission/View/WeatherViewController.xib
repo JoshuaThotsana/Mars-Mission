@@ -20,10 +20,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" pagingEnabled="YES" indicatorStyle="black" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zOq-pK-jJQ">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" pagingEnabled="YES" indicatorStyle="black" style="plain" separatorStyle="none" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOq-pK-jJQ">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="separatorInset" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                    <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="Bav-WE-vYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </tableView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="7pc-SJ-Iim">
                     <rect key="frame" x="0.0" y="412" width="414" height="71"/>
@@ -32,10 +37,11 @@
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+            <color key="backgroundColor" systemColor="systemBlueColor"/>
+            <color key="tintColor" systemColor="systemBlueColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zOq-pK-jJQ" secondAttribute="bottom" id="0Xa-ps-VX0"/>
-                <constraint firstItem="zOq-pK-jJQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7P0-HW-jnW"/>
+                <constraint firstItem="zOq-pK-jJQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="7P0-HW-jnW"/>
                 <constraint firstItem="zOq-pK-jJQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KQw-HS-oIt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zOq-pK-jJQ" secondAttribute="trailing" id="TSo-sp-JeB"/>
             </constraints>
@@ -43,8 +49,9 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="logo" width="669" height="779"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
